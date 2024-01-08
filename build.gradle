@@ -27,27 +27,48 @@ ext {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	// actuator
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	// MVC
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// Bean Validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// Session
+	implementation 'org.springframework.session:spring-session-core'
+
+	// JDBC API
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+
+	// SPRING DATA JPA
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Lombok
 	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'com.h2database:h2'
-	runtimeOnly 'com.mysql:mysql-connector-j'
+	testCompileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
+	// H2 Database Driver
+	runtimeOnly 'com.h2database:h2'
+
+	// Mysql Database Driver
+	runtimeOnly 'com.mysql:mysql-connector-j'
+
+	// Spring Test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// TEST-CONTAINER
 	testImplementation 'org.springframework.boot:spring-boot-testcontainers'
-	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
 	testImplementation 'org.testcontainers:junit-jupiter'
 	testImplementation 'org.testcontainers:mysql'
+
+	// Spring Restdocs
+	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
 }
 
 tasks.named('test') {
 	outputs.dir snippetsDir
 	useJUnitPlatform()
-}
-
-tasks.named('asciidoctor') {
-	inputs.dir snippetsDir
-	dependsOn test
 }

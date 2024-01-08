@@ -1,13 +1,13 @@
-package com.bombo.revisor;
+package com.bombo.reviser;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RevisorApplication {
+public class ReviserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RevisorApplication.class, args);
+		SpringApplication.run(ReviserApplication.class, args);
 	}
 
 }
