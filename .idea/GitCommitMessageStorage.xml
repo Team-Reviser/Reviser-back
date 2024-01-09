@@ -5,12 +5,12 @@
       <MessageStorage>
         <option name="commitTemplate">
           <CommitTemplate>
-            <option name="body" value="- common.error.ErrorCode(Enum) : ErrorCode를 모아놓는 Enum 클래스&#10;- api.common.response.ApiResponse : Api" />
+            <option name="body" value="- build.gradle : build 시에 자동으로" />
             <option name="changes" value="" />
             <option name="closes" value="" />
-            <option name="scope" value="code" />
+            <option name="scope" value="" />
             <option name="skipCi" value="" />
-            <option name="subject" value="기본 응답 객체 및 예외 처리 객체 구현" />
+            <option name="subject" value="#2 ErrorCode Enum 객체를 RestDocs에 추가" />
             <option name="type" value="feat" />
           </CommitTemplate>
         </option>

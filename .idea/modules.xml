@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reviser.main.iml" filepath="$PROJECT_DIR$/.idea/modules/reviser.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reviser.test.iml" filepath="$PROJECT_DIR$/.idea/modules/reviser.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/revisor-common/revisor-common.iml" filepath="$PROJECT_DIR$/revisor-common/revisor-common.iml" />
     </modules>
   </component>

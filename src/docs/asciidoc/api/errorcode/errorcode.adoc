@@ -1,0 +1,3 @@
+[[Error-code]]
+
+include::{snippets}/errorcode-response/errorcode-response-fields.adoc[]
