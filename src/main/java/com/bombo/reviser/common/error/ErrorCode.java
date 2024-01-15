@@ -21,10 +21,11 @@ public enum ErrorCode {
     // TODO
 
     // TODO DETAILS
-    TODO_TITLE_IS_NOT_BLANK_EXCEPTION("BRD_001", "리뷰의 타이틀은 null 이거나 공백 일 수 없습니다."),
-    TODO_TITLE_IS_OUT_OF_RANGE_EXCEPTION("BRD_002", "리뷰의 타이틀은 50자 이하여야 합니다."),
-    TODO_DESCRIPTION_IS_NOT_NULL_EXCEPTION("BRD_003", "리뷰의 내용은 null 일 수 없습니다."),
-    TODO_DESCRIPTION_IS_OUT_OF_RANGE_EXCEPTION("BRD_004", "리뷰의 내용은 300자 이하여야 합니다."),
+    TODO_TITLE_IS_NOT_BLANK_EXCEPTION("BTD_001", "할 일의 타이틀은 null 이거나 공백 일 수 없습니다."),
+    TODO_TITLE_IS_OUT_OF_RANGE_EXCEPTION("BTD_002", "할 일의 타이틀은 50자 이하여야 합니다."),
+    TODO_DESCRIPTION_IS_NOT_NULL_EXCEPTION("BTD_003", "할 일의 내용은 null 일 수 없습니다."),
+    TODO_DESCRIPTION_IS_OUT_OF_RANGE_EXCEPTION("BTD_004", "할 일의 내용은 300자 이하여야 합니다."),
+    TODO_DETAILS_WRITE_DATETIME_IS_NOT_NULL_EXCEPTION("BTD_005", "할 일의 생성 날짜는 null 일 수 없습니다."),
 
     // REVIEW
     EXCEED_REVIEW_COUNT_EXCEPTION("BR_001", "복습 횟수를 초과 할 수 없습니다."),

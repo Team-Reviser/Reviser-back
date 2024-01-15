@@ -29,7 +29,7 @@ public class TodoTitleTest {
         assertThatThrownBy(() -> {
             new Title(input);
         }).isInstanceOf(TitleIsNotBlankException.class)
-                .hasMessage("리뷰의 타이틀은 null 이거나 공백 일 수 없습니다.");
+                .hasMessage("할 일의 타이틀은 null 이거나 공백 일 수 없습니다.");
     }
 
     @DisplayName("Todo의 title이 50자를 초과하면 예외가 발생한다.")
@@ -42,7 +42,7 @@ public class TodoTitleTest {
         assertThatThrownBy(() -> {
             new Title(input);
         }).isInstanceOf(TitleOutOfRangeException.class)
-                .hasMessage("리뷰의 타이틀은 50자 이하여야 합니다.");
+                .hasMessage("할 일의 타이틀은 50자 이하여야 합니다.");
     }
 
     @DisplayName("제목의 길이가 1자에서 50자 사이라면 정상적으로 생성된다.")

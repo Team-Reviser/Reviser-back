@@ -24,7 +24,7 @@ public class TodoDescriptionTest {
         // when & then
         assertThatThrownBy(() -> new Description(null))
                 .isInstanceOf(DescriptionIsNotNullException.class)
-                .hasMessage("리뷰의 내용은 null 일 수 없습니다.");
+                .hasMessage("할 일의 내용은 null 일 수 없습니다.");
     }
 
     @DisplayName("TODO의 description이 500자를 초과하면 예외가 발생한다.")
@@ -36,7 +36,7 @@ public class TodoDescriptionTest {
         // when & then
         assertThatThrownBy(() -> new Description(input))
                 .isInstanceOf(DescriptionOutOfRangeException.class)
-                .hasMessage("리뷰의 내용은 300자 이하여야 합니다.");
+                .hasMessage("할 일의 내용은 300자 이하여야 합니다.");
     }
 
     @DisplayName("TODO의 description이 300자 이내라면 정상적으로 생성된다.")
