@@ -5,12 +5,12 @@
       <MessageStorage>
         <option name="commitTemplate">
           <CommitTemplate>
-            <option name="body" value="- Description#validConstruct(String) : 비즈니스에 따른 description 검증&#10;- TodoDescriptionTest#" />
+            <option name="body" value="- TitleProvider.create() : Title 팩토리 및 생성 메서드&#10;- DescriptionProvider.create() : Description 팩토리 및 생성 메서드&#10;- TodoDetailsProvider.create() : TodoDetails 팩토리 및 생성 메서드&#10;- TodoDetails.validConstructor() : TodoDetails 생성자 검증 메서드" />
             <option name="changes" value="" />
             <option name="closes" value="" />
             <option name="scope" value="" />
             <option name="skipCi" value="" />
-            <option name="subject" value="#3 Todo Description 구현 및 테스트" />
+            <option name="subject" value="#3 TodoDetails 도메인 로직 구현 및 테스트" />
             <option name="type" value="feat" />
           </CommitTemplate>
         </option>
