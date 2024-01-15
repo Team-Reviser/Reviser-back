@@ -9,7 +9,7 @@ import org.apache.logging.log4j.util.Strings;
 @Getter
 public class Title {
 
-    private static final int MAX_TITLE_LENGTH = 50;
+    private static final int TITLE_MAX_LENGTH = 50;
 
     private String title;
 
@@ -23,7 +23,7 @@ public class Title {
             throw new TitleIsNotBlankException(ErrorCode.TODO_TITLE_IS_NOT_BLANK_EXCEPTION);
         }
 
-        if (title.length() > MAX_TITLE_LENGTH) {
+        if (title.length() > TITLE_MAX_LENGTH) {
             throw new TitleOutOfRangeException(ErrorCode.TODO_TITLE_IS_OUT_OF_RANGE_EXCEPTION);
         }
     }
