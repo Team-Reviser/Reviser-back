@@ -1,4 +1,4 @@
-package com.bombo.reviser.domain.todo;
+package com.bombo.reviser.core.todo.domain;
 
 import com.bombo.reviser.core.todo.domain.Title;
 import com.bombo.reviser.core.todo.exception.TitleIsNotBlankException;

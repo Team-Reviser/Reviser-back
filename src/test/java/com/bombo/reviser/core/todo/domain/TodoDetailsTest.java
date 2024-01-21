@@ -1,4 +1,4 @@
-package com.bombo.reviser.domain.todo;
+package com.bombo.reviser.core.todo.domain;
 
 import com.bombo.reviser.core.todo.domain.Description;
 import com.bombo.reviser.core.todo.domain.Title;
